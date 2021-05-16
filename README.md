@@ -1,2 +1,2 @@
-# portfolio
-my projects portfolio
+# Portfolio
+my graphic design portfolio
