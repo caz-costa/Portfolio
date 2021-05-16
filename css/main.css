@@ -1,0 +1,262 @@
+@font-face {
+    font-family: "Grifter";
+    src: url("../assets/fonts/GRIFTER-Bold.otf") format("opentype");
+}
+
+body {
+    font-family: bilo, sans-serif;
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Grifter", Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+}
+
+h1 {
+    margin-top: 7px;
+}
+
+p,
+.nav > li > a {
+    font-family: bilo, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a:focus,
+a:hover,
+.nav > li > a:hover {
+    color: #f49d62;
+}
+
+a.disabled {
+    cursor: default;
+    pointer-events: none;
+}
+
+section {
+    padding-right: 30px;
+}
+
+video {
+    outline: none;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-footer-info {
+    font-size: 14px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.site-brand {
+    font-family: "Grifter", Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+.site-logo {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.site-brand > span,
+.nav {
+    margin-left: 10px;
+}
+
+.grid {
+    margin-top: 0;
+}
+
+.grid-item .project-description {
+    width: 100%;
+    margin: 0;
+    background: hsla(0, 0%, 100%, 0.9);
+}
+
+.project-text-inner p {
+    font-family: bilo, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.flew-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-container {
+    padding: 32px 0px 35px 0px;
+}
+
+.btn:active:focus,
+.btn:focus {
+    outline: none;
+}
+
+.btn-primary {
+    color: #000;
+    background-color: #ffe49a;
+    border-color: #ffe49a;
+    font-family: bilo, sans-serif;
+}
+
+.btn-primary:hover,
+.btn-primary:active:focus {
+    color: #fff;
+    background-color: #f49d62;
+    border-color: #f49d62;
+}
+
+.section-container-spacer p {
+    padding-top: 32px;
+}
+
+.hero-img {
+    margin-top: 57px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pt30 {
+    padding-top: 30px;
+}
+
+.pr30 {
+    padding-right: 30px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.project-grid img {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.project-grid img:hover {
+    transform: scale(1.03);
+}
+
+.project-buttons-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.previous-button img,
+.next-button img {
+    width: 85px;
+    height: 85px;
+}
+
+.previous-button img {
+    position: relative;
+    right: 20px;
+}
+
+.previous-button span {
+    position: relative;
+    right: 36px;
+}
+
+.next-button img {
+    position: relative;
+    left: 20px;
+}
+
+.next-button span {
+    position: relative;
+    left: 36px;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+#lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    max-width: 90%;
+    height: auto;
+    max-height: 80%;
+}
+
+.close-button {
+    position: fixed;
+    top: 3%;
+    right: 4%;
+    width: 120px;
+    cursor: pointer;
+}
+
+.lightwidget-widget {
+    width: 100%;
+    border: 0;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 1320px) {
+    aside {
+        min-width: 400px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    article {
+        display: block !important;
+    }
+
+    #about-text {
+        order: 1;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .previous-button img,
+    .next-button img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .previous-button span,
+    .next-button span {
+        font-size: 12px;
+    }
+}
